@@ -97,6 +97,26 @@
     ]
   }
   {
+    'begin': '(?<=runHaxeCode)\\s*(\\[(=*)\\[)'
+    'beginCaptures':
+      '0':
+        'name': 'string.quoted.other.multiline.lua'
+      '1':
+        'name': 'punctuation.definition.string.begin.lua'
+    'contentName': 'meta.embedded.lua'
+    'end': '(\\]\\2\\])'
+    'endCaptures':
+      '0':
+        'name': 'string.quoted.other.multiline.lua'
+      '1':
+        'name': 'punctuation.definition.string.end.lua'
+    'patterns': [
+      {
+        'include': 'source.haxe'
+      }
+    ]
+  }
+  {
     'begin': '(?<!--)\\[(=*)\\['
     'beginCaptures':
       '0':
@@ -145,7 +165,7 @@
     'name': 'variable.language.self.lua'
   }
   {
-    'match': '(?<![^.]\\.|:)\\b(assert|collectgarbage|dofile|error|getfenv|getmetatable|ipairs|loadfile|loadstring|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setfenv|setmetatable|tonumber|tostring|type|unpack|xpcall)\\b(?=\\s*(?:[({"\']|\\[\\[))'
+    'match': '(?<![^.]\\.|:)\\b(assert|collectgarbage|dofile|error|getfenv|getmetatable|ipairs|loadfile|loadstring|module|next|pairs|pcall|print|rawequal|rawget|rawset|require|select|setfenv|setmetatable|tonumber|tostring|type|unpack|xpcall|openCustomSubstate|closeCustomSubstate|initLuaShader|setSpriteShader|removeSpriteShader|getShaderBool|getShaderBoolArray|getShaderInt|getShaderIntArray|getShaderFloat|getShaderFloatArray|setShaderBool|setShaderBoolArray|setShaderIntArray|setShaderFloatArray|getRunningScripts|callOnLuas|callScript|getGlobalFromScript|setGlobalFromScript|isRunning|addLuaScript|removeLuaScript|runHaxeCode|addHaxeLibrary|loadSong|loadGraphic|loadFrames|getProperty|setProperty|getPropertyFromGroup|setPropertyFromGroup|removeFromGroup|getPropertyFromClass|setPropertyFromClass|getObjectOrder|setObjectOrder|doTweenX|doTweenY|doTweenAngle|doTweenAlpha|doTweenZoom|doTweenColor|noteTweenX|noteTweenY|noteTweenAngle|noteTweenDirection|mouseClicked|mousePressed|mouseReleased|noteTweenAngle|noteTweenAlpha|cancelTween|runTimer|onTimerCompleted|cancelTimer|addScore|addMisses|addHits|setScore|setMisses|setHits|getScore|getMisses|getHits|setHealth|addHealth|getHealth|getColorFromHex|keyboardJustPressed|keyboardPressed|keyboardReleased|anyGamepadJustPressed|anyGamepadPressed|anyGamepadReleased|gamepadAnalogX|gamepadAnalogY|gamepadJustPressed|gamepadPressed|gamepadReleased|keyJustPressed|keyPressed|keyReleased|addCharacterToList|precacheImage|precacheSound|precacheMusic|triggerEvent|startCountdown|endSong|restartSong|exitSong|getSongPosition|getCharacterX|setCharacterX|getCharacterY|setCharacterY|cameraSetTarget|cameraShake|cameraFlash|cameraFade|setRatingPercent|setRatingName|setRatingFC|getMouseXgetMouseY|getMidpointX|getMidpointY|getGraphicMidpointX|getGraphicMidpointY|getScreenPositionX|getScreenPositionY|characterDance|makeLuaSprite|makeAnimatedLuaSprite|makeGraphic|addAnimationByPrefix|addAnimation|addAnimationByIndices|addAnimationByIndicesLoop|playAnim|addOffset|setScrollFactor|addLuaSprite|setGraphicSize|scaleObject|updateHitbox|updateHitboxFromGroup|removeLuaSprite|luaSpriteExists|luaTextExists|luaSoundExists|setHealthBarColors|setTimeBarColors|setObjectCamera|setBlendMode|screenCenter|objectsOverlap|getPixelColor|getRandomInt|getRandomFloat|getRandomBool|startDialogue|startVideo|playMusic|playSound|stopSound|pauseSound|resumeSound|soundFadeIn|soundFadeOut|soundFadeCancel|getSoundVolume|setSoundVolume|getSoundTime|setSoundTime|debugPrint|changePresence|makeLuaText|setTextString|setTextSize|setTextWidth|setTextBorder|setTextColor|setTextFont|setTextItalic|setTextAlignment|getTextString|getTextSize|getTextFont|getTextWidth|addLuaText|removeLuaText|initSaveData|flushSaveData|getDataFromSave|setDataFromSave|checkFileExists|saveFile|deleteFile|getTextFromFile|stringStartsWith|stringEndsWith|stringSplit|stringTrim|directoryFileList)\\b(?=\\s*(?:[({"\']|\\[\\[))'
     'name': 'support.function.lua'
   }
   {

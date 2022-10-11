@@ -179,3 +179,30 @@
   'math.tanh':
     'prefix': 'tanh',
     'body': 'math.tanh(${0:x})'
+  'runHaxeCode':
+    'prefix': 'runhaxecode',
+    'body': 'runHaxeCode[[\n\t${0://code here}\n]]'
+  'doTweenX':
+    'prefix': 'dotweenx',
+    'body': 'doTweenX(${1:tag}, ${2:sprite}, ${3:x}, ${4:time}, ${5:tween})'
+  'doTweenY':
+    'prefix': 'dotweeny',
+    'body': 'doTweenY(${1:tag}, ${2:sprite}, ${3:y}, ${4:time}, ${5:tween})'
+  'doTweenAngle':
+    'prefix': 'dotweenan',
+    'body': 'doTweenAngle(${1:tag}, ${2:sprite}, ${3:alpha}, ${4:time}, ${5:tween})'
+  'doTweenAlpha':
+    'prefix': 'dotweenal',
+    'body': 'doTweenAlpha(${1:tag}, ${2:sprite}, ${3:alpha}, ${4:time}, ${5:tween})'
+  'noteTweenX':
+    'prefix': 'notetweenx',
+    'body': 'noteTweenX(${1:tag}, ${2:note}, ${3:x}, ${4:time}, ${5:tween})'
+  'noteTweenY':
+    'prefix': 'notetweeny',
+    'body': 'doTweenX(${1:tag}, ${2:note}, ${3:y}, ${4:time}, ${5:tween})'
+  'noteTweenAngle':
+    'prefix': 'notetweenan',
+    'body': 'doTweenX(${1:tag}, ${2:sprite}, ${3:y}, ${4:time}, ${5:tween})'
+  'noteTweenAlpha':
+    'prefix': 'notetweenal',
+    'body': 'noteTweenAlpha(${1:tag}, ${2:sprite}, ${3:y}, ${4:time}, ${5:tween})'

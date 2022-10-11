@@ -1,10 +1,10 @@
 {
-  "name": "language-lua",
+  "name": "language-lua-PSYCHENGINE",
   "version": "0.9.11",
   "private": false,
-  "author": "FireZenk <firezenk@gmail.com>",
-  "description": "Add syntax highlighting and snippets to Lua files in Atom",
-  "repository": "https://github.com/FireZenk/language-lua",
+  "author": "Mayo78 <mayooddtosee@gmail.com>",
+  "description": "Like the base language-lua, but it adds functions from psych engine",
+  "repository": "https://github.com/Mayo78/language-lua-PSYCHENGINE",
   "license": "MIT",
   "engines": {
     "atom": ">=0.50.0"
